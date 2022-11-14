@@ -56,7 +56,6 @@ nav > a:hover > img {
 #logo {
     z-index: 4;
     background-color: rgb(10, 10, 10);
-    text-align: center;
 }
 
 #logo > a {
@@ -65,5 +64,7 @@ nav > a:hover > img {
     font-family: "Open Sans", sans-serif;
     font-size: 32px;
     font-weight: bolder;
-    padding-bottom: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
