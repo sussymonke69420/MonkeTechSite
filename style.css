@@ -1,52 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    padding: clamp(1rem, 5vw, 6rem);
+}
+
+.nav > a {
+    color: rgba(255, 255, 255, 0.25);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(3rem, 8vw, 10rem);
+    font-weight: 300;
     text-decoration: none;
+    position: relative;
 }
 
-/* ANIMATIONS */
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+.nav > a:hover {
+    color: white;
 }
 
-/* NAVBAR */
-
-.navbar-wrapper {
-    margin: 0 auto;
-    padding: 14px 14px;
-    width: 45%;
-    margin-top: 25px;
-    
-    text-align: left;
-    background-color: #333;
-}
-
-.navbar-wrapper > .navlink {
-    letter-spacing: 0.25px;
-    color: #ffffff;
-    font-size: 24px;
-}
-
-.navbar-wrapper > .user-profile-picture {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    margin-top: -12.5px;
-    float: right;
-}
-
-/* NAVBAR ANIMATION HANDLERS */
-
-.navbar-wrapper > .navlink:hover {
-    color: rgb(255, 0, 0);
-}
-
-.navbar-wrapper > .user-profile-picture:hover {
-    animation-name: spin;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
+.nav > a > img {
+    width: 200px;
 }
