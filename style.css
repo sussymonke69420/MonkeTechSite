@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 body {
     background-color: rgb(10, 10, 10);
     margin: 0px;
@@ -49,10 +53,17 @@ nav > a:hover > img {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.logo {
+#logo {
+    z-index: 4;
     background-color: rgb(10, 10, 10);
+    text-align: center;
 }
 
-.logo > h1 {
+#logo > a {
+    z-index: inherit;
     color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 15px;
 }
