@@ -1,4 +1,4 @@
-const nav = document.getElementById("nav");
+const nav = document.getElementById("navbar-wrapper");
 
 for (const link of nav.getElementsByTagName("a")) {
     link.onmousemove = e => {

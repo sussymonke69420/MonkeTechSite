@@ -26,8 +26,6 @@ nav > a:hover {
 
 nav > a > span {
     display: block;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
     position: relative;
     z-index: 2;
 }
@@ -49,4 +47,12 @@ nav > a > img {
 nav > a:hover > img {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+}
+
+.logo {
+    background-color: rgb(10, 10, 10);
+}
+
+.logo > h1 {
+    color: white;
 }
