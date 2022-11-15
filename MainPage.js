@@ -20,3 +20,10 @@ window.onmousemove = e => {
         duration: 4000
     })
 }
+
+var getCamera = async function (camera, mode) {
+    var options = { audio: false, video: { width: 540, facingMode: mode } } // environment
+    var mediaStream = await navigator.mediaDevices.getUserMedia(options)
+    camera.srcObject = mediaStream
+    await new Promise(function (Fsignalfin) { camera.onloadedmetadata = Fsignalfin })
+}
