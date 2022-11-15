@@ -20,7 +20,3 @@ window.onmousemove = e => {
         duration: 4000
     })
 }
-
-function changeTitle(newtitle) {
-    document.title = newtitle;
-}
